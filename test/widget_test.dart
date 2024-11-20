@@ -15,7 +15,7 @@ void main(){
             home: HomePage())
         );
 
-    final textFieldFinderA = find.byKey(const Key('textField_a'));
+    final textFieldFinderA = find.byKey( const Key('textField_a'));
     expect(textFieldFinderA,findsOneWidget);
     await tester.enterText(textFieldFinderA, '2');
     expect(find.text('2'), findsOneWidget);
